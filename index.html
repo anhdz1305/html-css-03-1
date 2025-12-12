@@ -90,8 +90,13 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
+        <!-- animate -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
-    <body style="height: 5000px">
+    <body>
         <header class="header">
             <div class="container">
                 <div class="header-container">
@@ -166,19 +171,28 @@
                             </div>
 
                             <div class="hero-images">
-                                <div class="hero__img--card hero__img--1">
+                                <div
+                                    class="hero__img--card hero__img--1"
+                                    data-aos="flip-left"
+                                >
                                     <img
                                         src="./asset/img/hero-img-01.png"
                                         class="hero__img"
                                     />
                                 </div>
-                                <div class="hero__img--card hero__img--2">
+                                <div
+                                    class="hero__img--card hero__img--2"
+                                    data-aos="flip-left"
+                                >
                                     <img
                                         src="./asset/img/hero-img-02.png"
                                         class="hero__img"
                                     />
                                 </div>
-                                <div class="hero__img--card hero__img--3">
+                                <div
+                                    class="hero__img--card hero__img--3"
+                                    data-aos="flip-left"
+                                >
                                     <img
                                         src="./asset/img/hero-img-03.png"
                                         class="hero__img"
@@ -224,7 +238,11 @@
                     </section>
                 </div>
             </div>
-            <div class="our-services">
+            <div
+                class="our-services"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+            >
                 <div class="container">
                     <section class="services-content">
                         <div class="services-section">
@@ -333,12 +351,17 @@
                     </section>
                 </div>
             </div>
-            <div class="about-us">
+            <div
+                class="about-us"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+            >
                 <div class="container">
                     <section class="about-section">
                         <img
                             src="./asset/img/decor-01.svg"
                             class="about-decor__top-left"
+                            data-aos="fade-left"
                         />
                         <div class="about__image--container">
                             <div class="about-img-area">
@@ -346,10 +369,12 @@
                                     <img
                                         src="./asset/img/about-01.png"
                                         class="about-image about__image--01"
+                                        data-aos="flip-up"
                                     />
                                     <img
                                         src="./asset/img/about-02.png"
                                         class="about-image about__image--02"
+                                        data-aos="flip-up"
                                     />
                                 </div>
                                 <div class="small-card">
@@ -433,7 +458,11 @@
                     </section>
                 </div>
             </div>
-            <div class="process">
+            <div
+                class="process"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+            >
                 <div class="container">
                     <section class="process-container">
                         <div class="process-header">
@@ -533,7 +562,11 @@
                     </section>
                 </div>
             </div>
-            <div class="project-video">
+            <div
+                class="project-video"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+            >
                 <div class="container">
                     <div class="video__content">
                         <div class="video__content--header">
@@ -595,7 +628,11 @@
                     </div>
                 </div>
             </div>
-            <div class="feature-customer">
+            <div
+                class="feature-customer"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+            >
                 <div class="container">
                     <section class="feature-customer__section">
                         <div class="feature-customer-content">
@@ -669,7 +706,11 @@
                     </section>
                 </div>
             </div>
-            <div class="blog-articles">
+            <div
+                class="blog-articles"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+            >
                 <div class="container">
                     <section class="blog-articles__section">
                         <div class="blog-article__container">
@@ -1016,5 +1057,9 @@
                 <div class="footer-separate"></div>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

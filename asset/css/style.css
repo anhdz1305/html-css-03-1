@@ -9,7 +9,23 @@ body {
     font-family: "Poppins", sans-serif;
 }
 a {
+    color: inherit;
     text-decoration: none;
+}
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+a,
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -618,6 +634,7 @@ button {
 }
 
 .process__step:hover {
+    transition: all 0.5s ease;
     border-radius: 33px;
     background: var(--Scondery-color-light-green, #e2eddf);
 }
@@ -880,8 +897,9 @@ button {
     box-shadow: 0 12px 74px 0 rgba(91, 91, 91, 0.25);
     border-radius: 40px 40px 20px 20px;
 }
+
 .blog-card:hover .blog__card-content {
-    transition: 0.3s ease-in;
+    transition: 0.2s ease-in;
     padding: 26px 30px 12px;
 }
 .footer {
